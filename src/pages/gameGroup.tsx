@@ -5,7 +5,7 @@ import { GameModel } from '../components/gameGLB'
 import { Perf } from 'r3f-perf'
 import { Suspense } from 'react'
 
-export default function Test() {
+export default function GameGroup() {
   return (
     <div
       style={{
