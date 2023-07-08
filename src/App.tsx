@@ -3,6 +3,7 @@ import './App.css'
 import { Leva } from 'leva'
 import { Canvas } from '@react-three/fiber'
 import { Route, Routes } from 'react-router-dom'
+import Test from './pages/test'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       </Route>
       <Route path='/login' element={<Login />}></Route>
       <Route path='/forbidden' element={<Forbidden />}></Route> */}
+        <Route path="/" element={<Test />}></Route>
       </Routes>
     </>
   )

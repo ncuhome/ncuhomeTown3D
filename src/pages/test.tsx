@@ -1,0 +1,28 @@
+import { Box, OrbitControls } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
+import { Leva } from 'leva'
+import { GameModel } from '../components/gameGLB'
+import { Perf } from 'r3f-perf'
+import { Suspense } from 'react'
+
+export default function Test() {
+  return (
+    <div
+      style={{
+        width: '100vw',
+        height: '100vh',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+      <Canvas>
+        <OrbitControls makeDefault />
+        <directionalLight position={[0, 20, 0]} intensity={1.5} />
+        <ambientLight intensity={0.5} />
+        <Suspense fallback={null}>
+          <GameModel />
+        </Suspense>
+        <Perf position="top-left" />
+      </Canvas>
+    </div>
+  )
+}
