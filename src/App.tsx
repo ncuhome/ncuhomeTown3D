@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import './App.css'
-import { Leva } from 'leva'
-import { Canvas } from '@react-three/fiber'
 import { Link, Route, Routes } from 'react-router-dom'
 import GameGroup from './pages/gameGroup'
 import ProductGroup from './pages/productGroup'
+import DevGroup from './pages/devGroup'
 
 function App() {
   return (
@@ -12,6 +10,8 @@ function App() {
       <Link to="/game">Game</Link>
       <br />
       <Link to="/product">Product</Link>
+      <br />
+      <Link to="/dev">Dev</Link>
 
       <Routes>
         {/* <Route path='/' element={<PrivateRoute component={<StepHeader />} />}>
@@ -22,6 +22,7 @@ function App() {
       <Route path='/forbidden' element={<Forbidden />}></Route> */}
         <Route path="/game" element={<GameGroup />}></Route>
         <Route path="/product" element={<ProductGroup />}></Route>
+        <Route path="/dev" element={<DevGroup />}></Route>
       </Routes>
     </>
   )
