@@ -15,10 +15,10 @@ export default function DevGroup() {
         position: 'relative',
         overflow: 'hidden',
       }}>
-      <Canvas>
+      <Canvas flat>
         <color args={['#4E6E69']} attach="background" />
         <OrbitControls makeDefault />
-        <directionalLight position={[0, 20, 0]} intensity={1.5} />
+        <directionalLight position={[1, 2, 3]} intensity={1.5} castShadow />
         <ambientLight intensity={0.5} />
         <Suspense fallback={null}>
           <Center>
