@@ -1,12 +1,11 @@
-import { Box, Center, OrbitControls } from '@react-three/drei'
+import { Center, OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { Leva } from 'leva'
 
 import { Perf } from 'r3f-perf'
 import { Suspense } from 'react'
 import { DevModel } from '../components'
 import { Bloom, EffectComposer } from '@react-three/postprocessing'
-import { BlurPass, Resizer, KernelSize, Resolution } from 'postprocessing'
+import { KernelSize, Resolution } from 'postprocessing'
 
 export default function DevGroup() {
   return (

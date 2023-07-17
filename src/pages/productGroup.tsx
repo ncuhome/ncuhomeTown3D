@@ -1,7 +1,5 @@
-import { Box, OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { Leva } from 'leva'
-import { GameModel } from '../components/gameGLB'
 import { Perf } from 'r3f-perf'
 import { Suspense } from 'react'
 import { ProductModel } from '../components/productGLB'
