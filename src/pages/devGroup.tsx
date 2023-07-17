@@ -18,7 +18,7 @@ export default function DevGroup() {
         overflow: 'hidden',
       }}>
       <Canvas flat>
-        <color args={['#4E6E69']} attach="background" />
+        <color args={[0.3, 0.43, 0.41]} attach="background" />
         <OrbitControls makeDefault />
         <directionalLight position={[1, 2, 3]} intensity={1.5} castShadow />
         <ambientLight intensity={0.5} />
