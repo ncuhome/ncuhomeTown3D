@@ -2,7 +2,7 @@ import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { Perf } from 'r3f-perf'
 import { Suspense } from 'react'
-import { ProductModel } from '../components/productGLB'
+import { ProductModel } from '../components'
 
 export default function ProductGroup() {
   return (
